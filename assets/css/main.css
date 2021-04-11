@@ -4268,16 +4268,6 @@ body.is-menu-visible #menu {
     visibility: visible;
 }
 
-#Terno {
-    display: inline;
-    margin-left: 1em;
-}
-
-.Key-points {
-    display: inline;
-    float: right;
-}
-
 .btn-style {
     position: relative;
     left: 49.5%;

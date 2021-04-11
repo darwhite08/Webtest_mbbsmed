@@ -8,7 +8,101 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- CDN Tailblock css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
+<style>
+    .headingGal {
+        font-size: 4em;
+        font-weight: bold;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 40%;
+    }
+    
+    div.gallery {
+        border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 33.333%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* content college */
+    
+    body {
+        background-color: #283747;
+    }
+    
+    .jumbotron {
+        background-color: #34495E;
+        color: white;
+    }
+    /* prevent over-resizing of photo*/
+    
+    .card {
+        max-width: 400px;
+        margin: auto;
+        background-color: black;
+    }
+    /*make caption box smaller*/
+    
+    .card-block {
+        padding: 10px;
+        margin-bottom: -20px;
+    }
+    /* allow spacing between photo and timeline*/
+    
+    #timeline-start {
+        margin-top: 60px;
+    }
+    /* disable bulletpoint, allow spacing between list items*/
+    
+    .list {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+</style>
 
 <body class="is-preload">
 
@@ -31,29 +125,117 @@
                 <a href="#">Contact Us</a>
             </li>
             <li><a href="About.html">About Us</a></li>
+            </li>
+            <li><a href="#Gallery">Gallery</a></li>
         </ul>
     </nav>
 
     <!-- Heading -->
     <div id="heading">
-        <h1>TERNOPIL STATE MEDICAL UNIVERSITY</h1>
+        <h1 style=" font-size: 2em;">TERNOPIL STATE MEDICAL UNIVERSITY</h1>
     </div>
 
     <!-- Main -->
-    <section id="main" class="wrapper">
-        <div id="Terno" class="w3-cardm">
-            <img src="Ukraine/Terno/Image_12.jpg" style="max-width: 50%; max-height: 100%;" class=" w3-mobile">
-            <ul class="Key-points">
-                <!-- Key points on Terno -->
-                <li>Founded in 1997</li>
-                <li>Medicine (6 years – MD program), Dentistry (5 years), Pharmacy (5 years), and Nursing (2–4 years)</li>
-                <li>Language of Instruction English</li>
-                <li>Ternopil National Medical University is the first among medical universities of Ukraine A/c to webometrics</li>
-            </ul>
+    <section id="main" class="wrapper ">
+        <div class="inner">
+            <div class="content">
+                <div class=" w3-section">
+                    <img src="Ukraine/Terno/Image_12.jpg" alt="">
+                </div>
+                <header class=" w3-section" style="font-size: 1em; font-weight: bold; padding: 10px;">
+                    <h2 class=" w3-red">About the University</h2>
+                </header>
+                <ul style=" list-style-type: disc;">
+                    <li> Government University</li>
+                    <li> Top-Ranked Medical University</li>
+                    <li>MCI & WHO Recognised</li>
+                    <li>Faculty: About 600 faculty members (3 academicians of the National Academy of Medical Science of Ukraine, 85 full professors, more than 500 associate professors and assistant professors).</li>
+                    <li>Students: Over 5,000 Foreign Students from 60+ countries. Alumni – more than 20,000, over 18,000 in Ukraine, nearly 2,000 in other countries (USA, Canada, Israel, Germany, Austria, Norway, UK, some Asian and African countries).
+                    </li>
+                    <li>Library Collection: About 6,00,000 volumes.
+                    </li>
+                    <li>The staff of the Faculty of International Students: 8 Professors, 30 Associate Professors, 17 Assistant Professors, 1 senior laboratory assistant, 3 laboratory assistants.</li>
+                </ul>
+                <header class=" w3-section" style="font-size: 1em; font-weight: bold; padding: 10px;">
+                    <h2 class=" w3-red">Eligibility </h2>
+                </header>
+                <ul style=" list-style-type: disc;">
+                    <li>NEET qualification is must. </li>
+                    <li> The student must be at least 17 years old</li>
+                    <li>The student must have an aggregate of at least 50% in Physics, Chemistry and Biology and must have English as a compulsory subject.</li>
+                    <li> Admission is not possible in Ternopil if the student has not qualifed NEET</li>
+                </ul>
+                <header class=" w3-section" style="font-size: 1em; font-weight: bold; padding: 10px;">
+                    <h2 class=" w3-red">Recognitions</h2>
+                </header>
+                <ul style=" list-style-type: disc;">
+                    <li>Medical Council of India (MCI)</li>
+                    <li>Worl health Organisation</li>
+                    <li>World ranking is 4,057</li>
+                </ul>
+            </div>
         </div>
-
     </section>
 
+    <!-- Gallery -->
+    <section id="Gallery" class=" w3-section">
+        <h2 class="headingGal">Gallery</h2>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Ukraine/Terno/University_hospital.jpg">
+                    <img src="Ukraine/Terno/University_hospital.jpg" alt="Cinque Terre" width="400px" height="600px">
+                </a>
+                <div class="desc">University Hospital</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Ukraine/Terno/Training_center.jpg">
+                    <img src="Ukraine/Terno/Training_center.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Training center for Emergency care</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Ukraine/Terno/White_coat.jpg">
+                    <img src="Ukraine/Terno/White_coat.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">White Coat ceremony</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Ukraine/Terno/Clinical_training.jpg">
+                    <img src="Ukraine/Terno/Clinical_training.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Clinical Training</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Ukraine/Terno/Labaratory.jpg">
+                    <img src="Ukraine/Terno/Labaratory.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">labaratory</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="Ukraine/Terno/Best student awarded.jpg">
+                    <img src="Ukraine/Terno/Best student awarded.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Best student being awarded</div>
+            </div>
+        </div>
+
+
+        <div class="clearfix"></div>
+    </section>
     <!-- Footer -->
     <footer id="footer">
         <div class="inner">
@@ -73,7 +255,7 @@
                     </ul>
                 </section>
                 <section>
-                    <h4>Magna sed ipsum</h4>
+                    <h4>Social Handle</h4>
                     <ul class="plain">
                         <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
                         <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
@@ -83,11 +265,12 @@
                 </section>
             </div>
             <div class="copyright">
-                &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+                &copy; <a href="">Copyright</a> &vert;
+                <a href="">Terms and Conditions*</a> &vert;
+                <a href="">About</a>
             </div>
         </div>
     </footer>
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
